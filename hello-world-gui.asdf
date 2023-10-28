@@ -1,0 +1,14 @@
+(asdf:defsystem "hello-world-gui"
+	:description "hello-world-gui: a sample Lisp GUI system"
+	:version "0.0.0"
+	:author "Foo Bar <foobar@example.com>"
+	:license "Public Domain"
+	:depends-on ("cl-cffi-gtk")
+	:serial t
+	:components ((:file "hello-world-gui"))
+	:in-order-to ((test-op (o c) (symbol-call :fiveam #':run!))))
+	
+(asdf:defsystem "hello-world-gui/tests"
+	:depends-on ("hello-world-gui" "fiveam")
+	:serial t
+	:components ((:file "hello-world-gui-tests")))
