@@ -1,4 +1,4 @@
-$LibDir = "lib"
+$LibDir = "gtk-win64-dlls"
 $DistDir = "dist"
 $ExecutableFile = "hello-world-gui.exe"
 

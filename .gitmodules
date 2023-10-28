@@ -1,0 +1,3 @@
+[submodule "gtk-win64-dlls"]
+	path = gtk-win64-dlls
+	url = https://github.com/clover-systems/gtk-win64-dlls.git
